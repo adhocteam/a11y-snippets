@@ -1,2 +1,2 @@
-# a111y-snippets
+# a11y-snippets
 An ad hoc collection of accessible code snippets
