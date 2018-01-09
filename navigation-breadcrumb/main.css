@@ -14,11 +14,11 @@
 }
 
 .c-navigation--breadcrumb__list-item > a {
-  color: var(--color-primary);
+  color: var(--color-primary, #0071BC);
 }
 
 .c-navigation--breadcrumb__list-item > span {
-  color: var(--color-light-gray);
+  color: var(--color-light-gray, #AEB0B5);
   margin: 0 .25em;
 }
 
