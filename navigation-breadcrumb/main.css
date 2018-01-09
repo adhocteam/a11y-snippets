@@ -1,6 +1,6 @@
 :root {
-  --color-light-gray: #AEB0B5;
   --color-primary: #0071BC;
+  --color-secondary: #AEB0B5;
 }
 
 .c-navigation--breadcrumb__list {
@@ -18,7 +18,7 @@
 }
 
 .c-navigation--breadcrumb__list-item > span {
-  color: var(--color-light-gray, #AEB0B5);
+  color: var(--color-secondary, #AEB0B5);
   margin: 0 .25em;
 }
 
