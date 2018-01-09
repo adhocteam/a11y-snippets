@@ -9,6 +9,6 @@ Provide a research-ready breadcrumb navigation pattern that meets three broad go
 ## Instructions
 
 1. Open a terminal window
-2. From your prompt, enter the command `python -m SimpleHTTPServer 8000`
+2. Enter the command `python -m SimpleHTTPServer 8000` from your terminal prompt
 3. Open a browser, and enter the url `localhost:8000`
 4. You are now able to run accessibility tools like [axe-core](https://github.com/dequelabs/axe-core)
