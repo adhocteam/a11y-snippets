@@ -1,0 +1,37 @@
+:root {
+  --color-light-gray: #AEB0B5;
+  --color-primary: #0071BC;
+}
+
+.c-navigation--breadcrumb__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c-navigation--breadcrumb__list-item {
+  display: inline-block;
+}
+
+.c-navigation--breadcrumb__list-item > a {
+  color: var(--color-primary);
+}
+
+.c-navigation--breadcrumb__list-item > span {
+  color: var(--color-light-gray);
+  margin: 0 .25em;
+}
+
+/*
+ * https://gist.githubusercontent.com/1Copenut/ee977bd0e13d8a79c75b8dee6545256e/raw/b65940767c5117ad42742ccd6b4440fe2c4a5cf3/sr-only.css
+ */
+ .u-sr-only { 
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
