@@ -12,5 +12,9 @@
     "fs": "^0.0.1-security",
     "selenium-webdriver": "^3.6.0",
     "xml2json": "^0.11.0"
+  },
+  "scripts": {
+    "test:console-dark": "node index",
+    "test:report": "NODE_ENV=report node index > ./csv-reports/base.csv"
   }
 }

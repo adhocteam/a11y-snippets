@@ -42,10 +42,10 @@ var axeBuilder = AxeBuilder(driver)
     }
   });
 
-exports.checkA11y = function (dataArray) {
+exports.checkA11y = function (dataArray, el) {
   dataArray.forEach(function (url) {
     driver.get(url);
-    driver.wait(until.elementLocated(By.id('wrapper')), 10000)
+    driver.wait(until.elementLocated(By.id(el)), 10000)
       .then(function () {
         axeBuilder.analyze(function (results) {
           AxeReports.createCsvReportRow(results);
