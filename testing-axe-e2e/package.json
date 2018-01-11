@@ -1,0 +1,16 @@
+{
+  "name": "axe-core-js-e2e-analyzer",
+  "version": "1.0.0",
+  "description": "A script to evaluate and output axe-core errors for multi-page sites using Selenium Webdriver and Chrome headless",
+  "main": "index.js",
+  "author": "Trevor Pierce, Ad Hoc LLC",
+  "license": "Apache-2.0",
+  "private": false,
+  "dependencies": {
+    "axe-reports": "git+https://github.com/1Copenut/axe-reports.git",
+    "axe-webdriverjs": "^1.2.1",
+    "fs": "^0.0.1-security",
+    "selenium-webdriver": "^3.6.0",
+    "xml2json": "^0.11.0"
+  }
+}
