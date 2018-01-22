@@ -4,7 +4,8 @@ them to a terminal window, or CSV file. The script runs automatically, and is
 designed to evaluate large numbers of pages.
 
 ## Usage
-1. Add the `/axe-e2e/` directory to your project under test
+1. Add the `/axe-e2e/` directory to the project you want to test. If your
+   project root is `/cool-project/`, copy or move `/axe-e2e/` inside there.
 2. Run `$ yarn install` from your terminal prompt ($)
 3. Replace the `/fixtures/sitemap.example.xml` file with your actual XML
    sitemap. Ensure your XML file follows the same format as the example.
