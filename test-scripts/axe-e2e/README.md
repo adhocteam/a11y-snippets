@@ -24,14 +24,16 @@ them to a terminal window, or CSV file. The script runs automatically, and is ta
    sitemap. Ensure your XML file follows the same format as the example.
 4. Open `index.js` and upate the XML filename strings on lines 5, 8, and 11
 5. Run `$ cd axe-e2e/` from your terminal prompt
-6. Run one or more of the following from your terminal prompt:
+6. Run one or more of the following commands from your terminal prompt:
 
-* If using Yarn:
+### If using Yarn:
+
 * $ `yarn test:console-dark` to output errors to a dark terminal window
 * $ `yarn test:console-light` to output errors to a light terminal window
 * $ `yarn test:report` to output errors to `/csv-reports/base.csv`
 
-* If using npm:
+### If using npm:
+
 * $ `npm run test:console-dark` to output errors to a dark terminal window
 * $ `npm run test:console-light` to output errors to a light terminal window
 * $ `npm run test:report` to output errors to `/csv-reports/base.csv`
