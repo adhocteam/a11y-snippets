@@ -9,6 +9,7 @@
   "dependencies": {
     "axe-reports": "git+https://github.com/1Copenut/axe-reports.git",
     "axe-webdriverjs": "^1.2.1",
+    "chromedriver": "^2.35.0",
     "fs": "^0.0.1-security",
     "selenium-webdriver": "^3.6.0",
     "xml2json": "^0.11.0"

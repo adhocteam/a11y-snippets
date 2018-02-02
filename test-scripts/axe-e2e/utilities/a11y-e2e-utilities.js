@@ -1,10 +1,10 @@
 /* eslint semi: ["error", "always"] */
-var AxeBuilder = require('axe-webdriverjs');
-var AxeReports = require('axe-reports');
-var WebDriver = require('selenium-webdriver');
+var AxeBuilder = require("axe-webdriverjs");
+var AxeReports = require("axe-reports");
+var WebDriver = require("selenium-webdriver");
 var By = WebDriver.By;
 var until = WebDriver.until;
-var env = require('./env');
+var env = require("./env");
 
 /**
  * Based on examples and documentation provided by:
@@ -19,15 +19,15 @@ var env = require('./env');
 var chromeCapabilities = WebDriver.Capabilities.chrome();
 
 // Configure Chrome Headless
-if (env.a11yConfig === 'headless') {
-  chromeCapabilities.set('chromeOptions', {
-    args: ['--headless'],
+if (env.a11yConfig === "headless") {
+  chromeCapabilities.set("chromeOptions", {
+    args: ["--headless"]
   });
 }
 
 // Build the actual driver object
 var driver = new WebDriver.Builder()
-  .forBrowser('chrome')
+  .forBrowser("chrome")
   .withCapabilities(chromeCapabilities)
   .build();
 
@@ -41,13 +41,19 @@ driver
 // Build the axe scanner that will
 // analyze pages inside the driver
 var axeBuilder = AxeBuilder(driver).configure({
-  reporter: 'v2',
+  reporter: "v2",
   runOnly: {
-    type: 'tag',
-    values: ['wcag2a', 'wcag2aa', 'section508'],
-  },
+    type: "tag",
+    values: ["wcag2a", "wcag2aa", "section508"]
+  }
 });
 
+/**
+ * Scan for accessibility errors, and output them to to a CSV file.
+ *
+ * @param {String} Path to sitemap.xml file used to create array of URLs to scan
+ * @param {String} ID of container element WebDriver will look for
+ */
 exports.checkA11y = function(dataArray, el) {
   dataArray.forEach(function(url) {
     driver.get(url);
@@ -60,6 +66,13 @@ exports.checkA11y = function(dataArray, el) {
   driver.quit();
 };
 
+/**
+ * Scan for accessibility errors, and output them to the terminal console.
+ *
+ * @param {String} Path to sitemap.xml file used to create array of URLs to scan
+ * @param {String} ID of container element WebDriver will look for
+ * @param {String} Set console preference for darker or lighter background colors
+ */
 exports.checkA11yConsole = function(dataArray, el, consoleColor) {
   dataArray.forEach(function(url) {
     driver.get(url);
