@@ -28,12 +28,12 @@ them to a terminal window, or CSV file. The script runs automatically, and is ta
 
 ### If using Yarn:
 
-* $ `yarn test:console-dark` to output errors to a dark terminal window
-* $ `yarn test:console-light` to output errors to a light terminal window
-* $ `yarn test:report` to output errors to `/csv-reports/base.csv`
+* `$ yarn test:console-dark` to output errors to a dark terminal window
+* `$ yarn test:console-light` to output errors to a light terminal window
+* `$ yarn test:report` to output errors to `/csv-reports/base.csv`
 
 ### If using npm:
 
-* $ `npm run test:console-dark` to output errors to a dark terminal window
-* $ `npm run test:console-light` to output errors to a light terminal window
-* $ `npm run test:report` to output errors to `/csv-reports/base.csv`
+* `$ npm run test:console-dark` to output errors to a dark terminal window
+* `$ npm run test:console-light` to output errors to a light terminal window
+* `$ npm run test:report` to output errors to `/csv-reports/base.csv`
