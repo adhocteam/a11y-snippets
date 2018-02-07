@@ -19,16 +19,17 @@ them to a terminal window, or CSV file. The script runs automatically, and is ta
 
 1. Add the `axe-e2e` directory to the project you want to test. If your
    project root is `cool-project`, copy or move the `axe-e2e` directory inside it.
-2. Change into the `axe-e2e` directory by typing `cd axe-e2e` from your
+2. If you haven't already, open your Terminal application
+3. Change into the `axe-e2e` directory from the project root by typing `$ cd axe-e2e` at your
    terminal prompt ($)
-3. Run `$ yarn install` from your terminal prompt
-4. Name your sitemap file `sitemap.xml` and add it to the
+4. Type `$ yarn install` at your terminal prompt ($)
+5. Name your sitemap file `sitemap.xml` and add it to the
    `axe-e2e/fixtures` directory. Ensure your XML file follows the same format as `sitemap.example.xml`.
-5. `index.js` passes Webdriver an `id="content"` by default. If you use a
-   different ID on your pages to be tested, open `axe-e2e/index.js` and edit the
+6. `index.js` passes Webdriver an `id="content"` argument by default. If you use a
+   different ID on your pages, open `axe-e2e/index.js` and edit the
 second argument on lines 5, 8, and 11. Be sure to pass a `<String>` in quotation
 marks, or Webdriver will throw an error.
-6. Run one or more of the following commands from your terminal prompt:
+7. Run one or more of the following commands from your terminal prompt:
 
 ### If using Yarn:
 
