@@ -19,7 +19,7 @@ them to a terminal window, or CSV file. The script runs automatically, and is ta
 
 1. Add the `/axe-e2e/` directory to the project you want to test. If your
    project root is `/cool-project/`, copy or move `/axe-e2e/` inside it.
-2. Change into the `/axe-e2e/` directory by typing `cd /axe-e2e/ from your
+2. Change into the `/axe-e2e/` directory by typing `cd /axe-e2e/` from your
    terminal prompt ($)
 3. Run `$ yarn install` from your terminal prompt
 4. Name your sitemap file `sitemap.xml` and add it to the
