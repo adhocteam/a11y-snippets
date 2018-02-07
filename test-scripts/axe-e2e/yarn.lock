@@ -51,9 +51,9 @@ axe-core@^2.6.1:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-2.6.1.tgz#28772c4f76966d373acda35b9a409299dc00d1b5"
 
-"axe-reports@git+https://github.com/1Copenut/axe-reports.git":
+"axe-reports@https://github.com/adhocteam/axe-reports.git":
   version "1.2.0"
-  resolved "git+https://github.com/1Copenut/axe-reports.git#08d59739668c3d80509837e753b98efdd1f241ca"
+  resolved "https://github.com/adhocteam/axe-reports.git#08d59739668c3d80509837e753b98efdd1f241ca"
   dependencies:
     chalk "^2.1.0"
 

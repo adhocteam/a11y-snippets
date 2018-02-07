@@ -7,8 +7,8 @@
   "license": "Apache-2.0",
   "private": false,
   "dependencies": {
-    "axe-reports": "git+https://github.com/1Copenut/axe-reports.git",
     "axe-webdriverjs": "^1.2.1",
+    "axe-reports": "https://github.com/adhocteam/axe-reports.git",
     "chromedriver": "^2.35.0",
     "fs": "^0.0.1-security",
     "selenium-webdriver": "^3.6.0",
