@@ -1,3 +1,11 @@
+### Instructions - Remove this section before using
+* Create an `ISSUE_TEMPLATE` directory in your project root, on the `master` branch in Github
+* When you create a new issue, use the following URL to pre-populate the 508 issue template: `https://github.com/<ORG_NAME>/<ORG_REPO>/issues/new?template=508_issue_template.md`
+* `<ORG_NAME>` should be replaced with your organization name
+* `<ORG_REPO>` should be replaced with the project repository
+* [GITHUB: Creating an issue template for your repository](https://help.github.com/articles/creating-an-issue-template-for-your-repository/)
+* [GITHUB: About automation for issues and pull requests with query parameters](https://help.github.com/articles/about-automation-for-issues-and-pull-requests-with-query-parameters/)
+
 ### Title
 [ERROR TYPE]: Brief description of error
 
