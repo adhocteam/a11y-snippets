@@ -6,6 +6,9 @@ KEYBOARD: Divs styled as buttons ignore Spacebar keypress
 ### Issue
 This is a detailed description of the issue. It should include a restatement of the issue title, and more background information.
 
+### Acceptance Criteria
+As a keyboard user, I want to open the Level of Coverage widget by pressing Spacebar or pressing Enter. These keypress actions should not interfere with the mouse click event also opening the widget.
+
 ### Environment
 * Operating System, including <VERSION> or "latest"
 * Browser,including <VERSION> or "latest"
@@ -20,7 +23,7 @@ This is a detailed description of the issue. It should include a restatement of 
 5. Press Spacebar to open the Level of Coverage widget
 6. Verify the widget does not open when Spacebar is pressed
 
-### Possible Fixes
+### Possible Fixes (optional)
 If the issue is one that can be fixed easily by changing HTML, CSS, or JavaScript markup, include the snippet in the issue description. If it is a longer fix or you do not have a ready solution, remove this section.
 
 ```html
@@ -33,5 +36,6 @@ If the issue is one that can be fixed easily by changing HTML, CSS, or JavaScrip
 </button>
 ```
 
-### Acceptance Criteria
-As a keyboard user, I want to open the Level of Coverage widget by pressing Spacebar or pressing Enter. These keypress actions should not interfere with the mouse click event also opening the widget.
+### WCAG or Vendor Guidance (optional)
+* [Making actions keyboard accessible by using keyboard event handlers](https://www.w3.org/WAI/GL/wiki/Making_actions_keyboard_accessible_by_using_keyboard_event_handlers_with_WAI-ARIA_controls)
+* [MDN: Using the button role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role)
