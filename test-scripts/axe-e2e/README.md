@@ -25,10 +25,10 @@ them to a terminal window, or CSV file. The script runs automatically, and is ta
 4. Type `$ yarn install` at your terminal prompt ($)
 5. Name your sitemap file `sitemap.xml` and add it to the
    `axe-e2e/fixtures` directory. Ensure your XML file follows the same format as `sitemap.example.xml`.
-6. `index.js` passes Webdriver an `id="content"` argument by default. If you use a
-   different ID on your pages, open `axe-e2e/index.js` and edit the
-second argument on lines 5, 8, and 11. Be sure to pass a `<String>` in quotation
-marks, or Webdriver will throw an error.
+6. `index.js` passes Webdriver a `css selector="#content"` argument by default. If you use a
+   different [CSS selector](https://www.w3.org/TR/CSS/#selectors) on your pages, open `axe-e2e/index.js` and edit the
+   second argument on lines 5, 8, and 11. Be sure to pass a `<String>` in quotation
+   marks, or Webdriver will throw an error. For more information about Webdriver selectors, see [Webdriver > Class > By](https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/by_exports_By.html) documentation.
 7. Run one or more of the following commands from your terminal prompt:
 
 ### If using Yarn:
