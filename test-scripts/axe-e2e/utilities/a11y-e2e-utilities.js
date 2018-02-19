@@ -57,7 +57,7 @@ var axeBuilder = AxeBuilder(driver).configure({
 exports.checkA11y = function(dataArray, el) {
   dataArray.forEach(function(url) {
     driver.get(url);
-    driver.wait(until.elementLocated(By.id(el)), 10000).then(function() {
+    driver.wait(until.elementLocated(By.css(el)), 10000).then(function() {
       axeBuilder.analyze(function(results) {
         AxeReports.createCsvReportRow(results);
       });
