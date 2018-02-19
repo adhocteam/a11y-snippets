@@ -53,6 +53,9 @@ var axeBuilder = AxeBuilder(driver).configure({
  *
  * @param {String} Path to sitemap.xml file used to create array of URLs to scan
  * @param {String} ID of container element WebDriver will look for
+ *
+ * Documentation for Webdriver selector functions:
+ * https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_By.html
  */
 exports.checkA11y = function(dataArray, el) {
   dataArray.forEach(function(url) {
