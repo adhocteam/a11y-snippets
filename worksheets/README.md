@@ -17,7 +17,18 @@ Rich applications are more loosely defined:
 
 You will need to perform automated and manual accessibility testing to receive an accurate heat index score. Automated test errors are used to calcuate a raw score, manual test errors are used as score multipliers, and total pages or views under test are used to normalize for site and application size.
 
-### Automated Testing
+### Page Counts
 
-* Download and run the axe-e2e script if you are evaluating electronic content
-* Download the Chrome or Firefox axe-core plugins if you are evaluating software
+Enter the number of pages you will be testing into your worksheet. If you are testing electronic content, your page count should match the number of unique URLs in your `sitemap.xml` file. If you are testing software or rich web applications, you should consider each view, route, or unique presentation as one page.
+
+### Testing with aXe
+
+* Download and run Ad Hoc's [axe-e2e script](https://github.com/adhocteam/a11y-snippets/tree/master/test-scripts/axe-e2e) if you are evaluating electronic content
+* Download the [Chrome](https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US) or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/axe-devtools/) axe plugins if you are evaluating software
+* Count up the number of Critical, Serious, Major, and Minor errors axe detects in your electronic content or software. You will input these error counts into your chosen worksheet.
+* The `axe-e2e` script can create a CSV file for easy sorting and counting. This is a useful feature if you are evaluating a large number of pages.
+* Software or rich web applications should be evaluated manually. Different user paths, rich interfaces, and routing software make automated scanning impractical.
+
+### Testing Keyboard, Zoom, Color, and Screen Reader Usability
+
+Manual testing for keyboards, layout zoom to 400%, color, and screen reader usability are treated as pass or fail for index scoring.
