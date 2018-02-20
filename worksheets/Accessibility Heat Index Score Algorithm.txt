@@ -49,9 +49,9 @@
 		// Sum up the automated error scores
 		//
 		// Param C24	<Number>: Count of Critical automated errors * 4,
-		// Param C25	<Number>: Count of Serious automated serious errors * 3,
-		// Param C26	<Number>: Count of Major automated major errors * 2,
-		// Param C27	<Number>: Count of Minor automated minor errors
+		// Param C25	<Number>: Count of Serious automated errors * 3,
+		// Param C26	<Number>: Count of Moderate automated errors * 2,
+		// Param C27	<Number>: Count of Minor automated errors
 		(
 			SUM(
 				SUM(C24, C25, C26, C27),
