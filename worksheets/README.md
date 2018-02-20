@@ -4,7 +4,9 @@ An Excel (XLSX) and Open Document Standard (ODS) worksheet to calcuate an access
 
 ## Which Worksheet Should I Use
 
-Which worksheet to use depends on the type of content you are evaluating. Informational sites with high numbers of static content pages should be considered electronic content.
+Which worksheet to use depends on the type of content you are evaluating.
+
+Informational sites with high numbers of static content pages should be considered electronic content.
 
 Rich applications are more loosely defined:
 
