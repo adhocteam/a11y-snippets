@@ -1,27 +1,25 @@
-# Accessibility Heat Index Score
+# Accessibility Page Score
 
-An Excel (XLSX) and Open Document Standard (ODS) worksheet to calcuate an accessibiilty score for static content sites, referred to as `electronic content` and rich web applications, referred to as `applications` or `software`.
+An Excel (XLSX) and Open Document Standard (ODS) worksheet to calcuate an accessibiilty score per page. This score can measure compliance for static content, referred to as `electronic content` and rich web applications, referred to as `applications` or `software`.
 
 ## Which Worksheet Should I Use
 
-Which worksheet to use depends on the type of content you are evaluating.
+Informational sites with pages of static content should use the Accessibility Page Score - Electronic Content file. These sites are often hand-coded or managed with a content management system like Wordpress.
 
-Informational sites with high numbers of static content pages should be considered electronic content.
+Web applications that meet one ore more of these criteria should be considered software:
 
-Rich applications are more loosely defined:
-
-* Created using a client-side framework like React, Angular, or Vue.js
-* Contain logic trees that provide different experiences based on user input
-* Contain a high number of rich user interfaces or widgets
-* Provide dynamic content like video, audio, or live data streams
+* Use a client-side framework like [React](https://reactjs.org/), [Angular](https://angularjs.org/), or [Vue.js](https://vuejs.org/)
+* Contain logic that controls experience based on user input
+* Contain rich user interfaces or widgets
+* Provide dynamic content like video, audio, or data feeds
 
 ## Testing Procedures
 
-You will need to perform automated and manual accessibility testing to receive an accurate heat index score. Automated test errors are used to calcuate a raw score, manual test errors are used as score multipliers, and total pages or views under test are used to normalize for site and application size.
+You will need to perform all recommended tests to receive an accurate page score. Automated test errors calculate raw scores, manual tests calculate modifiers, and page count helps smooth scores based on application size.
 
-### Page Counts
+### Page Count
 
-Enter the number of pages you will be testing into your worksheet. If you are testing electronic content, your page count should match the number of unique URLs in your `sitemap.xml` file. If you are testing software or rich web applications, you should consider each view, route, or unique presentation as one page.
+Count the number of pages you will be testing. If you are reviewing electronic content, your page count could be the number of URLs in your `sitemap.xml` file. If you are testing software or rich web applications, you should consider each view, route, or unique presentation one page.
 
 ### Testing with aXe
 
@@ -33,15 +31,18 @@ Enter the number of pages you will be testing into your worksheet. If you are te
 
 ### Testing Keyboard, Zoom, Color, and Screen Reader Usability
 
-Manual testing for keyboards, layout zoom to 400%, color, and screen reader usability are treated as pass or fail for index scoring. Each modifier has been assigned a weighting value, based on US population statistics where available, and educated guesses where necessary. The modifier weights attempt to quantify the impact on users as page counts increase.
+Tests for keyboard, zoom to 400%, color, and screen reader are treated as pass or fail. Each modifier has been weighted using United States population statistics where available, and educated guesses where necessary. The values get larger as page counts increase, to accurately capture user impact.
 
-To determine a passing or failing grade for manual tests, please read the Ad Hoc Manual A11y PassFail Criteria document. It has been included in this repository as Word (.docx) and Open Document Text (.odt) documents. Each test type outlines specific things to look for, and provides links to more information where applicable.
+To determine manual test pass or fail, please read the Manual Test Pass Fail Criteria document. It has been included as a Word (.docx) and Open Document Text (.odt) document. Specific errors are called out for each test. Links to more information are included to make your tests easier and meaningful.
 
-### Determining Your Heat Index Score
+### Determining Your Accessibility Page Score
 
-After you have tallied automated and manual errors, you are ready to enter values into the worksheets and get your accessibility index score.
+When automated and manual errors are tallied, you are ready to enter them into respective worksheets. The worksheets have basic error handling, but make a few presumptions:
 
-#### For electronic (static) content
+* The pages being tested is equal or greater than 1
+* Manual test failures will increase your page score in a non-linear way
+
+#### Electronic Content
 
 1. Change the number of pages being tested in cell B17
 2. Enter a test date in cell B18 (optional)
@@ -50,9 +51,9 @@ After you have tallied automated and manual errors, you are ready to enter value
 5. Enter the number of moderate axe errors in cell B25
 6. Enter the number of minor axe errors in cell B26
 7. Answer Yes or No in cells B29-B32. These are dropdown menus that can be clicked to show the options inside.
-8. Review your current accessibility heat index score in cell B35.
+8. Review your current accessibility page score in cell B35.
 
-#### For software (rich web applications)
+#### Software (Rich Web Applications)
 
 The software worksheet includes two extra inputs for active focus management. Single-page applications often require focus to be captured and reset programmatically. This modifier is heavily weighted because it has the potential to disrupt keyboard and screen reader users and should be considered its own test class. [Learn more about actively managing focus for React apps.](https://adhocteam.us/2018/02/20/developer-driven-focus-management-for-single-page-applications/)
 
@@ -63,4 +64,4 @@ The software worksheet includes two extra inputs for active focus management. Si
 5. Enter the number of moderate axe errors in cell B26
 6. Enter the number of minor axe errors in cell B27
 7. Answer Yes or No in cells B30-B34. These are dropdown menus that can be clicked to show the options inside.
-8. Review your current accessibility heat index score in cell B37.
+8. Review your current accessibility page score in cell B37.
