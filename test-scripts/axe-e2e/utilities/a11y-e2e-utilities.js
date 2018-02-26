@@ -44,7 +44,7 @@ var axeBuilder = AxeBuilder(driver).configure({
   reporter: "v2",
   runOnly: {
     type: "tag",
-    values: ["wcag2a", "wcag2aa", "section508"]
+    values: ["section508", "wcag2a", "wcag2aa", "best-practice"]
   }
 });
 
