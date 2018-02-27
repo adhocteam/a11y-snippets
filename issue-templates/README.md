@@ -1,10 +1,6 @@
 # Purpose
 
-Provide a research-ready breadcrumb navigation pattern that meets three broad goals:
-
-1. Offer a screenreader-only `H6` for heading navigation
-2. Offer visual flourishes that are invisible to assistive devices
-3. Offer context-aware `aria-label` attributes for assistive devices. These labels will be read by screenreaders instead of the shorter link labels shown onscreen.
+To provide templates for entering accessibility and Section 508 issues into Github and Jira. Include as much of the sample information as you can. This will make the issue easier to re-create and fix.
 
 ## Github Template Instructions
 
@@ -24,6 +20,7 @@ Each row in the Excel and Open Office documents represent one row in Jira. The S
   * **Issue Type** could include `<BUG>`, `<TASK>`, or custom types depending on your project
   * **Summary** is required for Jira to upload your file. This should be a brief explanation of the issue.
   * **Description** is a longer explanation of the issue, and is the field where the most information can be provided. The sample information shows how a typical accessibility ticket could be explained. The more information you can provide, the easier the issue will be to re-create.
+  * **Acceptance Criteria** is a longer explanation that begins with a user statment. "As a `<USER-TYPE>` user, I want to be able to undertake a `<USER-ACTION>`. User types can be screen reader, keyboard, etc., and user actions should be related to the issue you are trying to fix.
   * **Priority** will usually be Blocker, Critical, Major, Minor, or Trivial. If the issue is systemic, or identified by users as blocking critical interactions, consider escalating the issue to Critical or Blocker.
   * **Component** is a useful way to sort tickets in Jira. The template allows you to enter up to three unique components. If you do not need to use the Component column, enter a single comma `,` so Jira will parse the exported file correctly.
   * **Reporter** could be a user name or unique ID, based on your project and team.
