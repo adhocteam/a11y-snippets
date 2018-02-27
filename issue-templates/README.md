@@ -25,4 +25,4 @@ Each row in the Excel and Open Office documents represent one row in Jira. The S
   * **Component** is a useful way to sort tickets in Jira. The template allows you to enter up to three unique components. If you do not need to use the Component column, enter a single comma `,` so Jira will parse the exported file correctly.
   * **Reporter** could be a user name or unique ID, based on your project and team.
 * Export your file as a comma-separated value (CSV) file from Excel or Open Office when you have entered all of your data.
-* Follow these instructions to import your data into Jira: [Importing Data From CSV](https://confluence.atlassian.com/adminjiracloud/importing-data-from-csv-776636762.html#ImportingdatafromCSV-jirafieldtips)
+* Import your data: [JIRA: Importing Data From CSV](https://confluence.atlassian.com/adminjiracloud/importing-data-from-csv-776636762.html#ImportingdatafromCSV-jirafieldtips)
