@@ -72,4 +72,4 @@ The software worksheet includes two extra inputs for active focus management. Si
 7. Answer Yes or No in cells B30-B34. These are dropdown menus that can be clicked to show the options inside.
 8. Review your current accessibility page score in cell B37.
 
-<span id="fn1">Some footnote</span> [↑](#a1)
+<sup id="fn1">[1]</sup> > In this phase, developers generally test the software using white-box techniques. Additional validation is then performed using black-box or gray-box techniques, by another testing team. Moving to black-box testing inside the organization is known as alpha release. [↑](#a1)
