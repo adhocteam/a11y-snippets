@@ -2,13 +2,13 @@
 
 An Excel (XLSX) and Open Document Standard (ODS) worksheet to calcuate an accessibiilty score per page. This score can measure compliance for static content, referred to as `electronic content` and rich web applications, referred to as `applications` or `software`.
 
-## Page Score Goals by Release Cycle
+## Acceptable Scores
 
 * Test your applications for accessibility errors throughout the development cycle. Release cycles are a good time to fill out accessibility page score worksheets.
-* A page accessibility score of **10.0** or less is a good goal for an alpha release <sup
+* A page accessibility score of **15.0** or less is a good goal for an alpha release <sup
 id="a1">[[1]](#fn1)</sup>
-* A page accessibility score of **5.0** or less is the goal for a beta release <sup id="a2">[[2]](#fn2)</sup>
-* A page accessibility score of **2.5** or less is the goal for a production release
+* A page accessibility score of **10.0** or less is a good goal for a beta release <sup id="a2">[[2]](#fn2)</sup>
+* A page accessibility score of **5.0** or less is a good goal for a production release
 
 ## Which Worksheet Should I Use
 

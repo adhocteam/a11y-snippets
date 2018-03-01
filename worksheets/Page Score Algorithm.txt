@@ -20,7 +20,7 @@
 	0, 
 	
 	// FALSE: We have one or more errors
-	(IF(
+	IF(
 		// Check for automated errors
 		AND(
 			B24=0,
@@ -41,9 +41,7 @@
 		// Param C11	<Number>: 1.08 => Based on ~8% of US population that could have a type of color blindness
 		// Param C12	<Number>: 1.03 => Based on C9, due to the use of zoom by low / near sighted users
 		// Param C13	<Number>: 1.25 => Based on an educated guess as to the impact for screen reader, keyboard users
-		(
-			(SUM(C9, C10, C11, C12, C13) * B18) / B18
-		),
+    SUM(C9, C10, C11, C12, C13) * B18 / B18,
 
 		// FALSE: We have automated errors
 		// Sum up the automated error scores
@@ -52,11 +50,9 @@
 		// Param C25	<Number>: Count of Serious automated errors * 3,
 		// Param C26	<Number>: Count of Moderate automated errors * 2,
 		// Param C27	<Number>: Count of Minor automated errors
-		(
-			SUM(
-				SUM(C24, C25, C26, C27),
-				SUM(C9, C10, C11, C12, C13) * B18)
-			) / B18
-		)
+    SUM(
+      SUM(C24, C25, C26, C27),
+      SUM(C9, C10, C11, C12, C13) * B18
+    ) / B18
 	)
 )	
