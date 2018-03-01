@@ -72,4 +72,4 @@ The software worksheet includes two extra inputs for active focus management. Si
 7. Answer Yes or No in cells B30-B34. These are dropdown menus that can be clicked to show the options inside.
 8. Review your current accessibility page score in cell B37.
 
-<small id="fn1">Some footnote</small> [↩](#a1)
+<p id="fn1">Some footnote</p> [↩](#a1)
