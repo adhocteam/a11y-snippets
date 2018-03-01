@@ -4,17 +4,11 @@ An Excel (XLSX) and Open Document Standard (ODS) worksheet to calcuate an access
 
 ## Acceptable Scores
 
-* Test your applications for accessibility errors throughout the development
-cycle. When your product is ready for alpha release <sup
-id="a1">[[1]](#fn1)</sup>, fill out a first page accessibilty worksheet. A page
-accessibility score of **10.0** or less is a good goal for this cycle.
-* A page accessibility score of **5.0** or less is the goal when you are preparing a beta release <sup id="a2">[[2]](#fn2)</sup>.
-* A page accessibility score of **2.5** or less is the goal for production
-software.
-* Scores will increase with high numbers of automated errors on low page-count
-  applications.
-* Scores will also increase with manual errors on higher page-count
-  applications.
+* Test your applications for accessibility errors throughout the development cycle. Release cycles are a good time to fill out accessibility page score worksheets.
+* A page accessibility score of **10.0** or less is a good goal for an alpha release <sup
+id="a1">[[1]](#fn1)</sup>
+* A page accessibility score of **5.0** or less is the goal for a beta release <sup id="a2">[[2]](#fn2)</sup>
+* A page accessibility score of **2.5** or less is the goal for a production release
 
 ## Which Worksheet Should I Use
 
@@ -54,7 +48,8 @@ To determine manual test pass or fail, please read the Manual Test Pass Fail Cri
 When automated and manual errors are tallied, you are ready to enter them into respective worksheets. The worksheets have basic error handling, but make a few presumptions:
 
 * The pages being tested is equal or greater than 1
-* Manual test failures will increase your page score in a non-linear way
+* Scores will increase rapidly with high numbers of automated errors on low page-count applications
+* Scores will increase rapidly with manual errors on higher page-count applications
 
 #### Electronic Content
 
@@ -79,6 +74,8 @@ The software worksheet includes two extra inputs for active focus management. Si
 6. Enter the number of minor axe errors in cell B27
 7. Answer Yes or No in cells B30-B34. These are dropdown menus that can be clicked to show the options inside.
 8. Review your current accessibility page score in cell B37.
+
+## Additional Information
 
 <sup id="fn1">[1]</sup> Alpha software has most or all of its core functionality developed, but is not ready for user testing. [↑](#a1)
 
