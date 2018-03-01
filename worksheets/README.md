@@ -4,9 +4,17 @@ An Excel (XLSX) and Open Document Standard (ODS) worksheet to calcuate an access
 
 ## Acceptable Scores
 
-Test your applications for accessibility errors throughout the development
-cycle. When your product is nearing an alpha release<sup id="a1">[1](#fn1)</sup>, fill out a first page
-accessibilty worksheet.
+* Test your applications for accessibility errors throughout the development
+cycle. When your product is ready for alpha release <sup
+id="a1">[1](#fn1)</sup>, fill out a first page accessibilty worksheet. A page
+accessibility score of **10.0** or less is a good goal for this cycle.
+* A page accessibility score of **5.0** or less is the goal when you are preparing a beta release <sup id="a2">2</sup>.
+* A page accessibility score of **2.5** or less is the goal for production
+software.
+* Scores will increase with high numbers of automated errors on low page-count
+  applications.
+* Scores will also increase with manual errors on higher page-count
+  applications.
 
 ## Which Worksheet Should I Use
 
@@ -72,4 +80,6 @@ The software worksheet includes two extra inputs for active focus management. Si
 7. Answer Yes or No in cells B30-B34. These are dropdown menus that can be clicked to show the options inside.
 8. Review your current accessibility page score in cell B37.
 
-<sup id="fn1">[1]</sup> > In this phase, developers generally test the software using white-box techniques. Additional validation is then performed using black-box or gray-box techniques, by another testing team. Moving to black-box testing inside the organization is known as alpha release. [↑](#a1)
+<sup id="fn1">[1]</sup> Alpha software has most or all of its core functionality developed, but is not ready for user testing. [↑](#a1)
+
+<sup id="fn2">[2]</sup>Beta software has most or all of its core functionality developed, and is stable for user testing. [↑](#a2)
