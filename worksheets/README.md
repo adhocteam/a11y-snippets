@@ -2,6 +2,12 @@
 
 An Excel (XLSX) and Open Document Standard (ODS) worksheet to calcuate an accessibiilty score per page. This score can measure compliance for static content, referred to as `electronic content` and rich web applications, referred to as `applications` or `software`.
 
+## Acceptable Scores
+
+Test your applications for accessibility errors throughout the development
+cycle. When your product is nearing an alpha release<sup id="a1">[1](#fn1)</sup>, fill out a first page
+accessibilty worksheet.
+
 ## Which Worksheet Should I Use
 
 Informational sites with pages of static content should use the Accessibility Page Score - Electronic Content file. These sites are often hand-coded or managed with a content management system like Wordpress.
@@ -65,3 +71,5 @@ The software worksheet includes two extra inputs for active focus management. Si
 6. Enter the number of minor axe errors in cell B27
 7. Answer Yes or No in cells B30-B34. These are dropdown menus that can be clicked to show the options inside.
 8. Review your current accessibility page score in cell B37.
+
+<small id="fn1">Some footnote</small> [↩](#a1)

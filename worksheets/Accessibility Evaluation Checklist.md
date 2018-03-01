@@ -6,7 +6,7 @@ This document provides guidance to assess, report, and quantify the accessibilit
 
 ## Who it is for
 
-User interface and experience designers, researchers, and front-end engineers are the primary audience. However, this is not an exhaustive list. Anyone with access to a web browser or mobile device can be an accessibility tester. This document and templates can be used to help you identify **what** to test, and **how** to evaluate your website or application.
+User interface and user experience designers, researchers, and front-end engineers are the primary audience. However, this is not an exhaustive list. Anyone with access to a web browser or mobile device can be an accessibility tester. This document and templates can be used to help you identify **what** to test, and **how** to evaluate your website or application.
 
 ## Getting Started
 
@@ -21,15 +21,15 @@ Automated scan errors are the first thing we recommend logging for fixes. These 
 * [Run automated scans](https://www.youtube.com/watch?v=FW1giWW5M9I) against all rich application pages or states. The Axe-core plugin is available for [Chrome](https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US) and [Firefox](https://addons.mozilla.org/en-US/firefox/addon/axe-devtools/). This adds a tab to developer tools and provides on-demand accessibility scanning for single pages during development.
 * [Run the axe-end to end script with CSV and console output](https://github.com/adhocteam/a11y-snippets/tree/master/test-scripts/axe-e2e) for automated scans of high page count static sites. Errors can be outputted to CSV for easy spreadsheet import.
 
-### Step 2. Audit with screen readers - maximal importance
+### Step 2. Audit with screen readers - maximum importance
 
-Screen reader testing is mostly a manual process. Ideally, pages under test should be free of errors identified by axe-core or other automated scanner before manual testing begins. For applications, this means all pages should be evaluated. For larger static sites, pick 10-15 highly trafficked pages, or run the [axe-e2e script](https://github.com/adhocteam/a11y-snippets/tree/master/test-scripts/axe-e2e) again.
+Screen reader testing is mostly a manual process. Ideally, pages under test should be free of errors identified by axe-core or other automated scanners before manual testing begins. For applications, this means all pages should be evaluated. For larger static sites, pick 10-15 highly trafficked pages, or run the [axe-e2e script](https://github.com/adhocteam/a11y-snippets/tree/master/test-scripts/axe-e2e) again.
 
 * [Test using JAWS + IE11 on Win7/10](https://webaim.org/articles/jaws/)
 * [Test using NVDA + Firefox on Win7/10 - VIDEO](https://www.youtube.com/watch?v=Vx1vSd5uYS8)
 * [Test using VoiceOver + Safari on OSX](https://webaim.org/articles/voiceover/)
 
-### Step 3. Audit keyboard navigation - maximal importance
+### Step 3. Audit keyboard navigation - maximum importance
 
 Keyboard testing is mostly a manual process. All pages under test should be free of errors identified by axe-core or other automated scanner first, then manual testing and ideally keyboard end-to-end testing should follow.
 
