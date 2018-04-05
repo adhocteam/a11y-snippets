@@ -1,0 +1,58 @@
+=IF(
+	// Check for errors of any kind
+	// B24:B27, automated error counts
+	// B30:B34, automated error yes | no select menus
+	AND(
+		B18>=1,
+		B24=0,
+		B25=0,
+		B26=0,
+		B27=0,
+		B30="No",
+		B31="No",
+		B32="No",
+		B33="No",
+		B34="No"
+	),
+
+	// TRUE: Score is zero. 
+	// BOOM! Nothing to do.	
+	0, 
+	
+	// FALSE: We have one or more errors
+	IF(
+		// Check for automated errors
+		AND(
+			B24=0,
+			B25=0,
+			B26=0,
+			B27=0
+		),
+			
+		// TRUE: Zero automated errors
+		// Sum the calculated modifier scores
+		// These are cumulative effects, which is why the multipliers are added, multiplied
+		// by the number of pages, then the multiplier score is divided by the number of pages.
+		// A manual error is likely to be repeated through template reuse, and has a larger
+		// impact as page counts increase.
+		//
+		// Param C9	<Number>: 1.03 => Based on the ~3% of US population identifying as blind
+		// Param C10	<Number>: 1.125 => Based on C9, plus an educated guess without reliable motor disability numbers
+		// Param C11	<Number>: 1.08 => Based on ~8% of US population that could have a type of color blindness
+		// Param C12	<Number>: 1.03 => Based on C9, due to the use of zoom by low / near sighted users
+		// Param C13	<Number>: 1.25 => Based on an educated guess as to the impact for screen reader, keyboard users
+    		SUM(C9, C10, C11, C12, C13) * B18 / B18,
+
+		// FALSE: We have automated errors
+		// Sum up the automated error scores
+		//
+		// Param C24	<Number>: Count of Critical automated errors * 4,
+		// Param C25	<Number>: Count of Serious automated errors * 3,
+		// Param C26	<Number>: Count of Moderate automated errors * 2,
+		// Param C27	<Number>: Count of Minor automated errors
+    		SUM(
+      			SUM(C24, C25, C26, C27),
+      			SUM(C9, C10, C11, C12, C13) * B18
+    		) / B18
+	)
+)	
