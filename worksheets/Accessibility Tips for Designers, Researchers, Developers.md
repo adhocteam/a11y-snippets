@@ -1,4 +1,4 @@
-# Accessibiilty Tips for Designers, Researchers, and Developers
+# Accessibility Tips for Designers, Researchers, and Developers
 
 Accessibility is a wide-ranging discipline, with many ways to contribute. **UI/UX designers, researchers, and front-end engineers** are the primary audience for this document; they will be able to make regular, measurable contributions to accessibility with respect to criteria outlined.
 
