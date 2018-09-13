@@ -6,14 +6,11 @@ The purpose of this document is to establish 3-4 tiers for acceptance criteria w
 
 ### Tier 1
 
-**Time to test:** 30-60 minutes
-
+**Time to test:** 30-60 minutes <br/>
 **Responsible party(ies):**
   * Front-end engineers
   * DevOps engineers for <abbr title="Continuous Integration, Continuous Deployment">CI/CD</abbr> pipeline automation
   * Quality assurance testers
-
-**Testing to be done:** Includes all of the following tests:
 
 #### Local Development (Front-end Engineers)
 
@@ -51,11 +48,9 @@ The purpose of this document is to establish 3-4 tiers for acceptance criteria w
 
 ### Tier 2
 
-**Time to test:** 1-2 days, 1 dedicated resource
-
+**Time to test:** 1-2 days, 1 dedicated resource <br/>
+**Testing to be done:** Includes all of Tier 1, and tests below <br/>
 **Responsible party(ies):** Accessibility specialist or delegate
-
-**Testing to be done:** Includes all of Tier 1, and:
 
 #### Manual Testing (Quality Assurance Testers)
 
@@ -71,11 +66,9 @@ The purpose of this document is to establish 3-4 tiers for acceptance criteria w
 
 ### Tier 3
 
-**Time to test:** 3-5 days, 1 dedicated resource
-
+**Time to test:** 3-5 days, 1 dedicated resource <br/>
+**Testing to be done:** Includes all of Tiers 1-2, and tests below <br/>
 **Responsible party(ies):** Accessibility specialist or delegate
-
-**Testing to be done:** Includes all of Tiers 1-2, and:
 
 #### Manual Testing (Quality Assurance Testers)
 
@@ -94,11 +87,9 @@ The purpose of this document is to establish 3-4 tiers for acceptance criteria w
 
 ### Tier 4
 
-**Time to test:** 5-10 days, 1 dedicated resource
-
+**Time to test:** 5-10 days, 1 dedicated resource<br/>
+**Testing to be done:** Includes all of Tiers 1-3, and tests below <br/>
 **Responsible party(ies):** Accessibility specialist
-
-**Testing to be done:** Includes all of Tiers 1-3, and:
 
 #### Manual Testing (Quality Assurance Testers)
 
