@@ -42,3 +42,17 @@ them to a terminal window, or CSV file. The script runs automatically, and is ta
 * `$ npm run test:console-dark` to output errors to a dark terminal window
 * `$ npm run test:console-light` to output errors to a light terminal window
 * `$ npm run test:report` to output errors to `/csv-reports/base.csv`
+
+## If you receive a Terminal error after updating
+
+The new version of axe-e2e may cause an error the first time you run `yarn | npm run test`. If this happens, run the following commands from your terminal prompt:
+
+### If using Yarn:
+
+1. `$ yarn install`
+2. `$ yarn test:<PREFERRED-TEST>` Replace `<PREFERRED-TEST>` with one of the yarn commands in Step 7 above.
+
+### If using npm:
+
+1. `$ npm install`
+2. `$ npm run test:<PREFERRED-TEST>` Replace `<PREFERRED-TEST>` with one of the npm commands in Step 7 above.

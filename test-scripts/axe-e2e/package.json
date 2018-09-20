@@ -1,6 +1,6 @@
 {
   "name": "axe-core-js-e2e-analyzer",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A script to evaluate and output axe-core errors for multi-page sites using Selenium Webdriver and Chrome headless",
   "main": "index.js",
   "author": "Trevor Pierce, Ad Hoc LLC",
