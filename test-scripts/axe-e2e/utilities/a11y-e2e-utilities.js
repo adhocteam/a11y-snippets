@@ -44,7 +44,7 @@ var axeBuilder = AxeBuilder(driver).configure({
   reporter: "v2",
   runOnly: {
     type: "tag",
-    values: ["wcag2a", "wcag2aa", "section508"]
+    values: ["section508", "wcag2a", "wcag2aa", "best-practice"]
   }
 });
 
@@ -53,11 +53,14 @@ var axeBuilder = AxeBuilder(driver).configure({
  *
  * @param {String} Path to sitemap.xml file used to create array of URLs to scan
  * @param {String} ID of container element WebDriver will look for
+ *
+ * Documentation for Webdriver selector functions:
+ * https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_By.html
  */
 exports.checkA11y = function(dataArray, el) {
   dataArray.forEach(function(url) {
     driver.get(url);
-    driver.wait(until.elementLocated(By.id(el)), 10000).then(function() {
+    driver.wait(until.elementLocated(By.css(el)), 10000).then(function() {
       axeBuilder.analyze(function(results) {
         AxeReports.createCsvReportRow(results);
       });
@@ -72,11 +75,14 @@ exports.checkA11y = function(dataArray, el) {
  * @param {String} Path to sitemap.xml file used to create array of URLs to scan
  * @param {String} ID of container element WebDriver will look for
  * @param {String} Set console preference for darker or lighter background colors
+ *
+ * Documentation for Webdriver selector functions:
+ * https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_By.html
  */
 exports.checkA11yConsole = function(dataArray, el, consoleColor) {
   dataArray.forEach(function(url) {
     driver.get(url);
-    driver.wait(until.elementLocated(By.id(el)), 10000).then(function() {
+    driver.wait(until.elementLocated(By.css(el)), 10000).then(function() {
       axeBuilder.analyze(function(results) {
         AxeReports.createConsoleReportRow(results, consoleColor);
       });
