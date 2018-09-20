@@ -50,9 +50,9 @@ The new version of axe-e2e may cause an error the first time you run `yarn | npm
 ### If using Yarn:
 
 1. `$ yarn install`
-2. `$ yarn test:<PREFERRED-TEST>` Replace `<PREFERRED-TEST>` with one of the yarn commands in Step 7 above.
+2. `$ yarn test:<PREFERRED-TEST>`.<br/>Replace `<PREFERRED-TEST>` with one of the yarn commands in Step 7 above.
 
 ### If using npm:
 
 1. `$ npm install`
-2. `$ npm run test:<PREFERRED-TEST>` Replace `<PREFERRED-TEST>` with one of the npm commands in Step 7 above.
+2. `$ npm run test:<PREFERRED-TEST>`.<br/>Replace `<PREFERRED-TEST>` with one of the npm commands in Step 7 above.
