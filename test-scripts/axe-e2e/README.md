@@ -43,7 +43,7 @@ them to a terminal window, or CSV file. The script runs automatically, and is ta
 * `$ npm run test:console-light` to output errors to a light terminal window
 * `$ npm run test:report` to output errors to `/csv-reports/base.csv`
 
-## If you receive a Terminal error after updating
+## Troubleshooting
 
 The new version of axe-e2e may cause an error the first time you run `yarn | npm run test`. If this happens, run the following commands from your terminal prompt:
 
