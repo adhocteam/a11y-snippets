@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!-- [if gt IE 8]><! -->
+<html class="no-js" lang="en">
+  <!-- <![endif] -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Flexbox Source Order Experiment</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <a href="#main" class="nav__skip-link">Skip to content</a>
+    <div id="container">
+      <!-- *Nav landmark -->
+      <nav
+        aria-label="Main navigation"
+        class="landmark__nav--main"
+        id="nav-main"
+      >
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html">Back to index</a></li>
+          <li class="nav__item"><a href="#">Legal</a></li>
+          <li class="nav__item"><a href="#">Customer Portal</a></li>
+          <li class="nav__item"><a href="#">Vendor Portal</a></li>
+        </ul>
+      </nav>
+      
+      <!-- *Banner Landmark -->
+      <header
+        aria-label="Cloud Corp banner"
+        class="landmark__header"
+        id="header"
+      >
+        <!-- TODO: Field guide for designers RE documentation -->
+        <nav
+          aria-label="Breadcrumb navigation"
+          class="landmark__nav--breadcrumb"
+          id="nav-breadcrumb"
+        >
+          <ol class="nav__list--breadcrumb">
+            <li class="nav__item--breadcrumb"><a href="#">Home</a></li>
+            <li class="nav__item--breadcrumb"><a href="#">Markets</a></li>
+            <li class="nav__item--breadcrumb"><a href="#">Research</a></li>
+            <li class="nav__item--breadcrumb"><a aria-current="page" href="#">AWS Platform</a></li>
+          </ol>
+        </nav>
+        <h1 class="header__title" id="heading-one">
+          Cloud Computing Is the Way
+        </h1>
+      </header>
+
+      <!-- *Main Landmark -->
+      <main
+        aria-labelledby="heading-one"
+        class="landmark__main"
+        id="main"
+      >
+        <article>
+          <h2 class="header__sub-title" id="heading-two">Amazon Web Service Benefits</h2>
+          <!-- TODO: Document NVDA, JAWS handling of these landmarks -->
+          <section aria-label="Corporate strategy" id="section-1">
+            <h3 class="header__section" id="heading-three-s1">
+              Corporate Strategy
+            </h3>
+            <p class="section__text">
+              Leverage agile frameworks to provide a robust synopsis for high
+              level overviews. Iterative approaches to corporate strategy foster
+              collaborative thinking to further the overall value proposition.
+              Organically grow the holistic world view of disruptive innovation
+              via workplace diversity and empowerment.
+            </p>
+            
+            <p class="section__text">
+              Bring to the table win-win survival strategies to ensure proactive
+              domination. At the end of the day, going forward, a new normal
+              that has evolved from generation X is on the runway heading
+              towards a streamlined cloud solution. User generated content in
+              real-time will have multiple touchpoints for offshoring.
+            </p>
+          </section>
+
+          <section aria-label="Industrial strategy" id="section-2">
+            <h3 class="header__section" id="heading-three-s2">Industrial Strategy</h3>
+            <p class="section__text">
+              Bring to the table win-win survival strategies to ensure proactive
+              domination. At the end of the day, going forward, a new normal
+              that has evolved from generation X is on the runway heading
+              towards a streamlined cloud solution. User generated content in
+              real-time will have multiple touchpoints for offshoring.
+            </p>
+            
+            <p class="section__text">
+              Capitalize on low hanging fruit to identify a ballpark value added
+              activity to beta test. Override the digital divide with additional
+              clickthroughs from DevOps. Nanotechnology immersion along the
+              information highway will close the loop on focusing solely on the
+              bottom line.
+            </p>
+          </section>
+
+          <section aria-label="Legal Strategy" id="section-3">
+            <h3 class="header__section" id="heading-three-s3">Legal Strategy</h3>
+            <p class="section__text">
+              Leverage agile frameworks to provide a robust synopsis for high
+              level overviews. Iterative approaches to corporate strategy foster
+              collaborative thinking to further the overall value proposition.
+              Organically grow the holistic world view of disruptive innovation
+              via workplace diversity and empowerment.
+            </p>
+            
+            <p class="section__text">
+              Bring to the table win-win survival strategies to ensure proactive
+              domination. At the end of the day, going forward, a new normal
+              that has evolved from generation X is on the runway heading
+              towards a streamlined cloud solution. User generated content in
+              real-time will have multiple touchpoints for offshoring.
+            </p>
+          </section>
+        </article>
+      </main>
+      
+      <!-- *Aside Landmark -->
+      <aside aria-labelledby="heading-three-a1" class="landmark__aside">
+        <h3 class="header__section header__section--aside" id="heading-three-a1">About Our Cloud</h3>
+        <section aria-labelledby="heading-four-a1" id="aside-section-1">
+          <h4 class="heading__aside" id="heading-four-a1">What is Cloud Computing?</h4>
+          <p class="aside__text">
+            <blockquote class="text__blockquote">
+              <p>Cloud computing is the on-demand delivery of compute power, database storage, applications, and other IT resources through a cloud services platform via the internet with pay-as-you-go pricing.</p>
+              <footer>
+                <cite>
+                  <a href="https://aws.amazon.com/what-is-cloud-computing/">Amazon Web Services</a>
+                </cite>
+              </footer>
+            </blockquote>
+          </p>
+        </section>
+        
+        <section aria-labelledby="heading-four-a2" id="aside-section-2">
+            <h4 class="heading__aside" id="heading-four-a2">Legal Disclaimer</h4>
+            <p class="aside__text">The right to share and change free software--to make sure that they, too, receive or can get it if you modify it. For an executable (object code). Legal Entity authorized to submit on behalf of, the Licensor for inclusion in the event of the original copyright notices in the Work constitutes direct or indirect, to cause the modified component; Information that is suitable for making modifications to it, including all Contributors.</p>
+          </section>
+      </aside>
+      
+      <!-- *Footer Landmark -->
+      <footer
+        aria-labelledby="heading-five-f1"
+        class="landmark__footer"
+        role="contentinfo"
+      >
+        <h5 class="heading__footer" id="heading-five-f1">Useful Links</h5>
+        <div class="util__flexbox util__flexbox--row util__flexbox--space-between">
+          <section aria-labelledby="heading-six-f1" id="footer-section-1">
+            <h6 class="heading__footer--section" id="heading-six-f1">
+              Specifications
+            </h6>
+            <ul aria-labelledby="heading-five-f1" class="nav__list--footer">
+              <li class="nav__item--footer"><a href="#">WCAG 2.1</a></li>
+              <li class="nav__item--footer"><a href="#">Section 508</a></li>
+              <li class="nav__item--footer"><a href="#">WAI-ARIA</a></li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="heading-six-f2" id="footer-section-2">
+            <h6 class="heading__footer--section" id="heading-six-f2">
+              Learning
+            </h6>
+            <ul aria-labelledby="heading-five-f1" class="nav__list--footer">
+              <li class="nav__item--footer"><a href="#">WebAIM</a></li>
+              <li class="nav__item--footer"><a href="#">CSS-Tricks</a></li>
+              <li class="nav__item--footer"><a href="#">Smashing Magazine</a></li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="heading-six-f3" id="footer-section-3">
+            <h6 class="heading__footer--section" id="heading-six-f3">
+              Screen Readers
+            </h6>
+            <ul aria-labelledby="heading-five-f1" class="nav__list--footer">
+              <li class="nav__item--footer"><a href="#">VoiceOver</a></li>
+              <li class="nav__item--footer"><a href="#">NVDA</a></li>
+              <li class="nav__item--footer"><a href="#">JAWS</a></li>
+            </ul>
+          </section>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

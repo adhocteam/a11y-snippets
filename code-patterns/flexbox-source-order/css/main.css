@@ -1,0 +1,208 @@
+/* ========================================
+ * IMPORTS
+ * ======================================== */
+@import "reset.css";
+@import "utilities.css";
+@import "variables.css";
+
+/* ========================================
+ * GENERAL LAYOUT
+ * ======================================== */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 2rem 6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2.1rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1.25rem;
+}
+
+p {
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+
+a:visited {
+  color: rebeccapurple;
+  color: var(--purple);
+}
+
+/* ========================================
+ * SKIP NAVIGATION LINK
+ * ======================================== */
+.nav__skip-link {
+  background: #eeeeee;
+  background: var(--gray);
+  display: inline-block;
+  left: 0;
+  padding: 1rem 3rem;
+  position: absolute;
+  top: -100rem;
+  z-index: 5;
+}
+
+.nav__skip-link:focus {
+  top: 0;
+}
+
+/* ========================================
+ * FLEXBOX CONTAINER
+ * ======================================== */
+#container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0 0 0.25rem;
+}
+
+/* ========================================
+ * HEADER
+ *
+ * Includes the flipped source order
+ * for breadcrumbs and great good!
+ * ======================================== */
+.landmark__header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -0.75rem;
+}
+
+.header__title {
+  margin: 0.5rem 0 1rem -0.25rem;
+  order: 1;
+}
+
+.header__sub-title {
+  margin-bottom: 2rem;
+  order: 2;
+}
+
+.landmark__header .landmark__nav--breadcrumb {
+  order: 3;
+}
+
+/* ========================================
+ * MAIN NAV
+ * ======================================== */
+.landmark__nav--main {
+  background: #eeeeee;
+  background: var(--gray);
+  height: 3rem;
+  left: 0;
+  padding: 0 0 0 6rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.landmark__nav--main .nav__list {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.landmark__nav--main .nav__item:nth-child(1) {
+  margin-right: auto;
+}
+
+.nav__item {
+  display: inline;
+  padding-right: 2rem;
+}
+
+/* ========================================
+ * BREADCRUMBS
+ * ======================================== */
+.nav__item--breadcrumb {
+  display: inline;
+  margin-right: 0.825rem;
+}
+
+.nav__item--breadcrumb::after {
+  content: ">";
+  padding-left: 0.825rem;
+}
+
+.nav__item--breadcrumb:last-of-type::after {
+  content: "";
+}
+
+/* ========================================
+ * MAIN
+ * ======================================== */
+.landmark__main {
+  padding-top: 3rem;
+}
+
+.section__text:last-of-type {
+  margin-bottom: 2rem;
+}
+
+/* ========================================
+ * ASIDE
+ * ======================================== */
+.landmark__aside {
+  border-top: 6px solid #121212;
+  border-top: 6px solid var(--black);
+  padding-top: 1rem;
+}
+
+.header__section--aside {
+  margin-bottom: 1rem;
+}
+
+.text__blockquote {
+  border-left: 12px solid rebeccapurple;
+  border-left: 12px solid var(--purple);
+  margin: 0 0 2rem 0.75rem;
+  padding: 1rem 0 1rem 1.125rem;
+}
+
+.text__blockquote p {
+  margin: 0;
+}
+
+/* ========================================
+ * FOOTER
+ * ======================================== */
+.landmark__footer {
+  background: #eeeeee;
+  background: var(--gray);
+  padding: 2rem 2rem 3rem;
+}
+
+.heading__footer,
+.heading__footer--section {
+  margin-bottom: 1rem;
+}
+
+.nav__item--footer {
+  margin-bottom: 0.5rem;
+}
