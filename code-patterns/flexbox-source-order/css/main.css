@@ -99,11 +99,10 @@ a:visited {
 
 .header__sub-title {
   margin-bottom: 2rem;
-  order: 2;
 }
 
 .landmark__header .landmark__nav--breadcrumb {
-  order: 3;
+  order: 2;
 }
 
 /* ========================================
