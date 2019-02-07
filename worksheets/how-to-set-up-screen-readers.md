@@ -1,4 +1,4 @@
-# Set up JAWS and NVDA screen readers for MAc
+# Set up JAWS and NVDA screen readers for Mac
 
 The goal of this document is to help Mac users get a virtual machine set up with Windows and the JAWS and NVDA screen readers for testing purposes. After you go through this set up document you should being able to test in both JAWS and NVDA in a Windows environment.
 
