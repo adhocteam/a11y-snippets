@@ -23,7 +23,7 @@ The goal of this document is to help Mac users get a virtual machine set up with
 1. [Download and install the latest version of JAWS](https://support.freedomscientific.com/Downloads/JAWS)
 1. Restart your virtual machine
 
-**Pro JAWS tip** [NVDA keyboard shortcuts](https://webaim.org/resources/shortcuts/jaws)
+**Pro JAWS tip** [JAWS keyboard shortcuts](https://webaim.org/resources/shortcuts/jaws)
 
 ## Let's install Firefox and NVDA next
 
