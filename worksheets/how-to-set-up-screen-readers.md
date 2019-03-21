@@ -14,6 +14,8 @@ The goal of this document is to help Mac users get a virtual machine set up with
 1. Run the Microsoft Windows virtual machine
 1. Yay! You now have IE11 on Win7 running on your Mac!
 
+**Audio Issues?** [VM error "No Audio Output Device is installed"](https://www.robolinux.org/lm/faq/14.html)
+
 ## Now that your virtual machine is running let's install JAWS
 
 **Note** JAWS will only run for 40 minutes unless you register the application.
@@ -23,7 +25,6 @@ The goal of this document is to help Mac users get a virtual machine set up with
 1. Restart your virtual machine
 
 **Pro JAWS tip** [JAWS keyboard shortcuts](https://webaim.org/resources/shortcuts/jaws)
-**Audio Issues?** [VM error "No Audio Output Device is installed"](https://www.robolinux.org/lm/faq/14.html)
 
 ## Let's install Firefox and NVDA next
 
