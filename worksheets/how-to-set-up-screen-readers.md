@@ -10,10 +10,11 @@ The goal of this document is to help Mac users get a virtual machine set up with
   1. Select your platform (VirtualBox)
 1. Install VirtualBox - if you run into permissions issues installing [check this](https://matthewpalmer.net/blog/2017/12/10/install-virtualbox-mac-high-sierra/index.html)
 1. Unzip the Microsoft Virtual machine you downloaded
-1. Start VirtualBox
-  1. File -> Import... select ovf file
+1. Start VirtualBox by double clicking the ovf file
 1. Run the Microsoft Windows virtual machine
 1. Yay! You now have IE11 on Win7 running on your Mac!
+
+**Audio Issues?** [VM error "No Audio Output Device is installed"](https://www.robolinux.org/lm/faq/14.html)
 
 ## Now that your virtual machine is running let's install JAWS
 
